@@ -1,0 +1,16 @@
+[Unit]
+Description=libraVDB daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/libravdbd serve
+Restart=on-failure
+RestartSec=5
+
+Environment=LIBRAVDB_RPC_ENDPOINT=unix:%h/.clawdb/run/libravdb.sock
+Environment=LIBRAVDB_DB_PATH=%h/.clawdb/data.libravdb
+Environment=LIBRAVDB_MODEL_PATH=/var/lib/libravdbd/models
+EnvironmentFile=-/etc/libravdbd/env
+
+[Install]
+WantedBy=default.target
