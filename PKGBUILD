@@ -4,7 +4,7 @@
 # provision.sh after install to download them.
 
 pkgname=libravdbd-bin
-pkgver=1.4.33
+pkgver=1.4.34
 pkgrel=1
 pkgdesc="AI-native vector database daemon with ML embeddings (prebuilt binary)"
 arch=('x86_64' 'aarch64')
@@ -17,8 +17,8 @@ source_x86_64=("libravdbd-linux-x86_64::https://github.com/xDarkicex/homebrew-op
 source_aarch64=("libravdbd-linux-aarch64::https://github.com/xDarkicex/homebrew-openclaw-libravdb-memory/releases/download/v${pkgver}/libravdbd-linux-arm64")
 source=("provision.sh::https://github.com/xDarkicex/homebrew-openclaw-libravdb-memory/releases/download/v${pkgver}/provision.sh")
 
-sha256sums_x86_64=('fee07adbc4c3bf5370da04725d7d60f749fd4b230ebfe64c3d159038a7450415')
-sha256sums_aarch64=('1f490e5fb9aa24780c7ec61f6d52b71fe7f2020b6a4a6f17c6f9f3600d99fa2f')
+sha256sums_x86_64=('3beda6aeb07affc01f6dd891e076beccd3cee853c9196094c66e06ca41d40310')
+sha256sums_aarch64=('3cb7944fcdaf54526c85a85386d68ec46b389e3f48addc37e9fc191c7c1f6803')
 sha256sums=('b358bdb9dbdf28b522b49caf4bb5b8db29a792fa92e9770e179fd030d87b70a0')
 
 package() {
