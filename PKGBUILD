@@ -4,7 +4,7 @@
 # provision.sh after install to download them.
 
 pkgname=libravdbd-bin
-pkgver=1.5.0
+pkgver=1.6.0
 pkgrel=1
 pkgdesc="AI-native vector database daemon with ML embeddings (prebuilt binary)"
 arch=('x86_64' 'aarch64')
@@ -18,8 +18,8 @@ source_aarch64=("libravdbd-linux-aarch64::https://github.com/xDarkicex/homebrew-
 source=("provision.sh::https://github.com/xDarkicex/homebrew-openclaw-libravdb-memory/releases/download/v${pkgver}/provision.sh"
         "nomic-embed-text-v1.5.Q8_0.gguf::https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF/resolve/main/nomic-embed-text-v1.5.Q8_0.gguf")
 
-sha256sums_x86_64=('be5be7e85c1ec3572207cb5676182164abc437841260070fd4fed451757b1032')
-sha256sums_aarch64=('bc59ac1f0244122f1c439fbc6d620f93c3347ce5f8f1131f9f9860002ea8e15f')
+sha256sums_x86_64=('a18e6203adb0bb626f7128c90af88b04acbea65e2ea924bb08d74afaaaf7b559')
+sha256sums_aarch64=('09c80f2482ba530b104d52ad9662aed475d76d224a3bb5c7164bc6a116c0285e')
 sha256sums=('9775a425df4592b8962a044b802781db2b3691022e38eb88f9e16ac24ef98333'
             '3e24342164b3d94991ba9692fdc0dd08e3fd7362e0aacc396a9a5c54a544c3b7')
 
@@ -35,7 +35,50 @@ package() {
     # License
     mkdir -p "${pkgdir}/usr/share/licenses/${pkgname}"
     cat > "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE" <<'LICENSE'
-libravdbd is distributed under a proprietary license.
-See https://github.com/zephyr-systems/libravdbd for terms.
+LIBRAVDB END USER LICENSE AGREEMENT (EULA)
+Copyright (c) 2026 Zephyr Systems. All rights reserved.
+
+1. DEFINITIONS: "Software" refers to the compiled binary files and
+   accompanying documentation distributed as libravdbd (the LibraVDB
+   vector service daemon). "Source Code" refers to the underlying
+   human-readable Go source files, which remain strictly proprietary
+   and confidential.
+
+2. LICENSE GRANT: Subject to the terms of this Agreement, Licensor
+   grants Licensee a non-exclusive, non-transferable, revocable
+   license to download, install, and execute the pre-compiled binary
+   form of the Software solely for personal, educational, or internal
+   evaluation purposes.
+
+3. RESTRICTIONS: Licensee explicitly agrees NOT to, and shall not
+   permit any third party or autonomous agent to:
+   (a) Decompile, disassemble, reverse engineer, decrypt, or otherwise
+       attempt to derive or reconstruct the Source Code or algorithmic
+       logic of the Software binaries;
+   (b) Modify, adapt, tamper with, or create derivative works based on
+       the Software;
+   (c) Redistribute, sell, rent, lease, sublicense, or publicly host
+       the Software as a managed service without explicit, prior
+       written commercial authorization from the Licensor;
+   (d) Remove, alter, or obscure any copyright notices, trademarks, or
+       proprietary legends contained within the Software.
+
+4. INTELLECTUAL PROPERTY: Licensee acknowledges that 100% of the
+   Source Code, engineering designs, mathematical scoring formulas,
+   and proprietary logic are and shall remain the sole and exclusive
+   intellectual property of the Licensor. No title or ownership of the
+   Source Code is transferred under this Agreement.
+
+5. TERMINATION: This license terminates automatically and instantly
+   upon any violation of the restrictions outlined in Section 3.
+
+6. DISCLAIMER OF WARRANTY: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+   WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+   TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+   PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+   COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE,
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+   OR OTHER DEALINGS IN THE SOFTWARE.
 LICENSE
 }
