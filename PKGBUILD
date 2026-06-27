@@ -18,8 +18,8 @@ source_aarch64=("libravdbd-linux-aarch64::https://github.com/xDarkicex/homebrew-
 source=("provision.sh::https://github.com/xDarkicex/homebrew-openclaw-libravdb-memory/releases/download/v${pkgver}/provision.sh"
         "nomic-embed-text-v1.5.Q8_0.gguf::https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF/resolve/main/nomic-embed-text-v1.5.Q8_0.gguf")
 
-sha256sums_x86_64=('317a3f9df96ea4b19d2c65212e694c4f2a71bcade577c9d759676b47b2a71865')
-sha256sums_aarch64=('c9cb031ddf44ffddf885013682e7beb724b125edf87e0d03f6bb5f49fed373ab')
+sha256sums_x86_64=('91837055213e81595a57ba081dbbe601aba1bd0b098003f291754fa61985471f')
+sha256sums_aarch64=('5342c9178357d064482327dee2ca224bae7c694264a161da24f9f63048af228e')
 sha256sums=('297b24e979de3fc70cda1dbdf3c47403c0ac178a7d1d1f402e8debb978b9d758'
             '3e24342164b3d94991ba9692fdc0dd08e3fd7362e0aacc396a9a5c54a544c3b7')
 
