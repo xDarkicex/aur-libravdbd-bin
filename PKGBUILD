@@ -4,7 +4,7 @@
 # provision.sh after install to download them.
 
 pkgname=libravdbd-bin
-pkgver=1.9.0
+pkgver=1.9.1
 pkgrel=1
 pkgdesc="AI-native vector database daemon with ML embeddings (prebuilt binary)"
 arch=('x86_64' 'aarch64')
@@ -18,8 +18,8 @@ source_aarch64=("libravdbd-linux-aarch64::https://github.com/xDarkicex/homebrew-
 source=("provision.sh::https://github.com/xDarkicex/homebrew-openclaw-libravdb-memory/releases/download/v${pkgver}/provision.sh"
         "nomic-embed-text-v1.5.Q8_0.gguf::https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF/resolve/main/nomic-embed-text-v1.5.Q8_0.gguf")
 
-sha256sums_x86_64=('9c7bfd5c396091a1e1601541932a525bdb2f7c143a22ccce4bac65a5a8801cdf')
-sha256sums_aarch64=('c0839b6af1132726ff2dcebdca4e6209f17c7e740a53612302d72d29c85a8002')
+sha256sums_x86_64=('4aae02e275ae4b27c56926e183d54c070817393a71af807eb052b70a603b2ac7')
+sha256sums_aarch64=('bd0e65604e752985eedffc314bf180c59058608b2d1f948fa77b76551095fb1c')
 sha256sums=('297b24e979de3fc70cda1dbdf3c47403c0ac178a7d1d1f402e8debb978b9d758'
             '3e24342164b3d94991ba9692fdc0dd08e3fd7362e0aacc396a9a5c54a544c3b7')
 
